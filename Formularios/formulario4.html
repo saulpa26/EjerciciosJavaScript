@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <script>
+
+        function cuadrado(){
+             let num1 = document.fdatos.num1.value;
+             
+             let resultado1 = Math.pow(num1,2)
+             document.writeln(`${resultado1}`);
+        }
+        function cubo(){
+             let num2 = document.fdatos.num2.value;
+             let resultado2 = Math.pow(num2,3)
+             document.writeln(`${resultado2}`);
+        }
+        
+
+    </script>
+</head>
+<body>
+    <form name="fdatos">
+        Introduce un número para calcular el cuadrado: 
+        <input type="number"  id="num1" size="10">
+        <input type="button" value="Calcular" onclick="cuadrado()">
+        <br><br>
+        Introduce un número para calcular el cubo:
+        <input type="number" id="num2" size="10">
+        <input type="button" value="Calcular" onclick="cubo()">
+    </form>
+    <p id="resultado1"></p>
+    <p id="resultado2"></p>
+</body>
+</html>

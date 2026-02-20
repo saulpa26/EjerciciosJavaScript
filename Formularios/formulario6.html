@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calculoNotas(){
+           
+            let nota1 = document.getElementById("num1").value;
+            let nota2 = document.getElementById("num2").value;
+            let porcentaje1 = document.getElementById("p1").value;
+            let porcentaje2 = document.getElementById("p2").value;
+            let resultado = (nota1*porcentaje1)+(nota2*porcentaje2);
+            document.writeln(`${resultado/100}`);
+        }
+        
+
+
+    </script>
+</head>
+<body>
+    <h1>Calculo de notas</h1>
+    <form action="fdatos">
+        Nota:  <input type="number" id="num1">
+        Porcentaje : <input type="text" id="p1">
+        <br><br>
+        Nota: <input type="number" id="num2">
+        Porcentaje: <input type="text" id="p2">
+        <br><br>
+        <input type="button" value="Calcular" onclick="calculoNotas()">
+    </form>
+    <p id="resultado"></p>
+    
+</body>
+</html>

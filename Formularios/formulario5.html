@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <script>
+        function ProcesaDatos(){
+            let objetoX = document.getElementById("RangoValor").value;
+            document.getElementById("resultado").innerHTML = objetoX;
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Entrada de datos visual con barra 'slide'</h1>
+    <input type="range" id="RangoValor" value="50" onchange="ProcesaDatos()">
+    <p id="resultado"></p>
+</body>
+</html>

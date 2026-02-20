@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <script>
+        function resultado(){
+            let num = document.fdatos.entrada.value;
+            document.writeln(`El 10% de ${num} es: ${num*0.1}`)
+        }
+
+    </script>
+</head>
+<body>
+    <form name="fdatos">
+        Escribe el número del que deseas sacar el 10%: <input type="text" size="5" name="entrada">
+        <input type="button" value="Pulsa aquí" onclick="resultado()">
+    </form>
+    
+</body>
+</html>
