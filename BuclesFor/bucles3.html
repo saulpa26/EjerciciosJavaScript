@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script>
+        function tabla(){
+            let num1 = document.getElementById("dato1").value;
+            let num2 = document.getElementById("dato2").value;
+            for(i=2 ; i<=num2 ; i++){
+                let resultado = num1*i;
+                document.writeln(`${num1}x${i}=${resultado}`);
+                document.write(`<br>`);
+               
+            }
+
+        }
+    </script>
+</head>
+<body>
+Introduce el número 1: <input type="number" id="dato1">
+<br><br>
+Introduce el número 2: <input type="number" id="dato2">
+<br><br>
+<input type="button" value="Aceptar" onclick="tabla()">
+</body>
+</html>
